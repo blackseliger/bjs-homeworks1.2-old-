@@ -74,6 +74,13 @@ function calculateDrinkTask(){
 }
 
 function askDrink(name,dateOfBirthday){
+  let bD = new Date().getFullYear(dateOfBirthday);  // это строка работает?.. Мне что то подсказывает что нет..
+   let todayDate = new Date();
+   if (todayDate < dateOfBirthday) {
+console.log(`Не желаете ли олд-фэшн, ${name}?`);
+   } else {
+       console.log(`Сожалею, ${name}, но я не могу вам продать алкоголь. Зато могу предложить вам замечательный клюквенный компот!`)
+   }
     // код для задачи №3 писать здесь
     //console.log(result)
     //return result;
